@@ -44,6 +44,7 @@ res = bytes.fromhex(code).decode()
   Tại sao ta phải có ```res = ""```, hiểu đơn giản là ta khai báo biến vậy ``` int a; char b ``` thì khi dùng biến res trong hàm for thì nó hiểu là đang sài res bên ngoài và lưu kết quả lại vào hàm res. Ở đây tôi khai báo là con trỏ không có j nên ```""``` để khi nó ``` += ``` thì nó sẽ không làm thay đổi dữ liệu ta cần
   ___
   *Để chạy được script này thì phải xoá hết các kí tự là có dấu =)))*
+  [script tham khảo khác](https://github.com/s-nikravesh/crypto-hack/blob/master/General/Encoding%20Challenge.py)
   ```python3
 from pwn import *  # pip install pwntools
 from base64 import *
